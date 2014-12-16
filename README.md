@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/deniseyu/jquery-pair-programming/badges/gpa.svg)](https://codeclimate.com/github/deniseyu/jquery-pair-programming)
 # Pair Programming Randomizer
 
 This is a simple app to generate randomized pairs for pair-programming. Built using Javascript backend and jQuery/HTML5 front end on a Sinatra server, tested in Jasmine.
