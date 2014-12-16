@@ -1,3 +1,72 @@
+body {
+  font-family: "Nixie One", cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #4683E0;
+}
+
+header {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 30px 10px 30px;
+  text-align: center;
+}
+
 h1 {
+  font-size: 3em;
   color: blue;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #9DD76B;
+}
+
+p.small {
+  font-size: 0.75em;
+  color: #94988A;
+}
+
+.main-body {
+  text-align: center;
+}
+
+#click-here {
+  width: 300px;
+  height: 200px;
+  color: white;
+  background-color: #4683E0;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2.5em;
+  border: 0;
+  border-radius: 30px;
+}
+
+#pairs {
+  width: 550px;
+  padding: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pair-box {
+  background-color: #F4FFA1;
+  border-radius: 50px;
+  display: block;
+  width: 500px;
+  height: 40px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.student-left, .student-right {
+  display: inline-block;
+  width: 200px;
+  font-size: 2em;
+  color: red;
 }

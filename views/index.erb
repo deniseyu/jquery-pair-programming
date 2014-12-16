@@ -1,19 +1,27 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+  <link href='https://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
 </head>
 
 <body>
 
-  <button id="click-here">CLICK ME</button>
-  <section id="pairs">
-  </section>
+  <header>
+    <h1>Pair Programming Randomizer</h1>
+    <h2>Unsure who to pair with? Click the button!</h2>
+    <p class='small'>* if you get the 'lone wolf', feel free to seek an alum helper to pair with you</p>
+  </header>
 
-<h1>Hello this is Thermocat</h1>
-<script src="/javascripts/jquery.js"></script>
-<script src="/javascripts/backend.js"></script>
-<script src="/javascripts/app.js"></script>
+  <main class='main-body'>
+    <button id="click-here">CLICK ME</button>
+    <section id="pairs"></section>
+  </main>
+
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/backend.js"></script>
+  <script src="/javascripts/app.js"></script>
 </body>
 
 </html>
