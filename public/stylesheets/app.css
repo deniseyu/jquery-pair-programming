@@ -28,10 +28,31 @@ h2 {
 p.small {
   font-size: 0.75em;
   color: #94988A;
+  margin-top: 5px;
 }
 
 .main-body {
   text-align: center;
+}
+
+.select-cohort {
+  width: 75px;
+  height: 30px;
+  border: 0;
+  background-color: #9DD76B;
+  color: white;
+  border-radius: 20px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+#active-cohort {
+  display: inline-block;
+  width: 50px;
+}
+
+.select-cohort:active {
+  background-color: #1AA62D;
 }
 
 #click-here {

@@ -53,3 +53,30 @@ function decemberCohort() {
     { "name": "Lone Wolf", "github": "https://github.com/spike01" }
   ]
 };
+
+function octoberCohort() {
+  this.studentsProfiles = [
+    { "name": "Nick", "github": "https://github.com/nickbdyer" },
+    { "name": "Chris H", "github": "https://github.com/chandley" },
+    { "name": "Ben H", "github": "https://github.com/benhutchinson" },
+    { "name": "Mishal", "github": "https://github.com/mishal1" },
+    { "name": "Rich", "github": "https://github.com/ralake" },
+    { "name": "Claudia", "github": "https://github.com/Callisto13" },
+    { "name": "Pavel", "github": "https://github.com/PaweI" },
+    { "name": "Alan", "github": "https://github.com/abridger" },
+    { "name": "Edward", "github": "https://github.com/ejbyne" },
+    { "name": "Izzy", "github": "https://github.com/imarkwick" },
+    { "name": "Simon", "github": "https://github.com/langesi" },
+    { "name": "Daniel", "github": "https://github.com/ayoobembe" },
+    { "name": "Ben C", "github": "https://github.com/Benc93" },
+    { "name": "Clare", "github": "https://github.com/ctrembath" },
+    { "name": "John", "github": "https://github.com/JKiely" },
+    { "name": "Giorgia", "github": "https://github.com/giorgia-amici" },
+    { "name": "Attila", "github": "https://github.com/Tr1ckX" },
+    { "name": "Dale", "github": "https://github.com/1278dale" },
+    { "name": "Shan", "github": "https://github.com/shanhasan" },
+    { "name": "Blease", "github": "https://github.com/ablease" },
+    { "name": "Ming", "github": "https://github.com/ming-chan" },
+    { "name": "Chris B", "github": "https://github.com/chrisjbatts" }
+  ]
+};

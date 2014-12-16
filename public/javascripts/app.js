@@ -1,11 +1,21 @@
 $(document).ready(function() {
   console.log("Ready to pair!");
   var newPairRandomizer = new pairRandomizer;
-  var decCohort = new decemberCohort;
-  var students = decCohort.studentsProfiles;
+  var cohort;
+
+  $('#october').on('click', function(){
+    cohort = new octoberCohort();
+    $('#active-cohort').text('October')
+  });
+
+  $('#december').on('click', function(){
+    cohort = new decemberCohort();
+    $('#active-cohort').text('December')
+  });
 
   $('#click-here').on('click', function(){
     $(this).hide();
+    var students = cohort.studentsProfiles;
     var shuffled = newPairRandomizer.shuffle(students)
     var pairedArray = newPairRandomizer.makePairs(shuffled);
     var pair;
@@ -20,7 +30,5 @@ $(document).ready(function() {
         pairedArray[pair][1].name + "</a>" + "</article>" + "</section>");
     }
   });
-
-
 
 });
