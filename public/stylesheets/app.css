@@ -55,6 +55,10 @@ p.small {
   background-color: #1AA62D;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 #click-here {
   width: 250px;
   height: 120px;

@@ -6,11 +6,13 @@ $(document).ready(function() {
   $('#october').on('click', function(){
     cohort = new octoberCohort();
     $('#active-cohort').text('October')
+    $('#click-here').removeClass('hidden');
   });
 
   $('#december').on('click', function(){
     cohort = new decemberCohort();
     $('#active-cohort').text('December')
+    $('#click-here').removeClass('hidden');
   });
 
   $('#click-here').on('click', function(){
