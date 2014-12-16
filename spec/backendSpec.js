@@ -38,8 +38,8 @@ describe('Pair Programming Helper', function(){
   it('without shuffling, the first pair should consist of the first two people', function(){
     var newCohort = new decemberCohort();
     var pairsToday = newPairRandomizer.makePairs(newCohort.studentsProfiles);
-    expect(pairsToday).toContain([{ "Huy": "https://github.com/tekhuy" },
-    { "Marcus": "https://github.com/mgedw" }]);
+    expect(pairsToday).toContain([{ "name": "Huy", "github": "https://github.com/tekhuy" },
+    { "name": "Marcus", "github": "https://github.com/mgedw" }]);
   });
 
   it('should be able to shuffle the students in an array', function(){
@@ -49,24 +49,20 @@ describe('Pair Programming Helper', function(){
       { "Tim": "https://github.com/scully87" },
       { "Yvette": "https://github.com/yvettecook" }
     ];
-    // var nicole = newCohort[0];
-    // console.log(Object.keys(newCohort[0]).toString());
-    // console.log(newPairRandomizer.nameToString(nicole);
-    // console.log(this.nameToString(newCohort[0]));
     newPairRandomizer.shuffle(newCohort);
     expect(newCohort).toContain({ "Nicole": "https://github.com/NicolePell" })
     // expect(newCohort[0]).toEqual({ "Nicole": "https://github.com/NicolePell" })
     // This does not genuinely test the method - uncomment and run Jasmine a few times to see randomizing
   });
 
-  it('behold, fourteen randomly shuffled pairs', function(){
+  it('should return fourteen randomly shuffled pairs', function(){
     var newCohort = new decemberCohort();
     var students = newCohort.studentsProfiles;
     var shuffled = newPairRandomizer.shuffle(students);
     var shuffledPairs = newPairRandomizer.makePairs(shuffled);
     expect(shuffledPairs.length).toEqual(14);
-    expect(shuffledPairs[0]).toEqual([{ "Huy": "https://github.com/tekhuy" },
-    { "Marcus": "https://github.com/mgedw" }])
+    expect(shuffledPairs[0]).not.toEqual([{ "name": "Huy", "github": "https://github.com/tekhuy" },
+    { "name": "Marcus", "github": "https://github.com/mgedw" }])
     // console.log(shuffledPairs[0])
     // this also does not genuinely test for randomness, but uncomment the console.log to see the first randomized pair
   });

@@ -21,9 +21,6 @@ pairRandomizer.prototype.nameToString = function(object) {
   Object.keys(object).toString();
 }
 
-// var nameToString = function(object){
-// };
-
 function decemberCohort() {
   this.studentsProfiles = [
     { "name": "Huy", "github": "https://github.com/tekhuy" },
