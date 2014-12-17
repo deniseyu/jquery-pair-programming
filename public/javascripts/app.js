@@ -18,7 +18,7 @@ $(document).ready(function() {
   $('#click-here').on('click', function(){
     $(this).hide();
     var students = cohort.studentsProfiles;
-    var shuffled = newPairRandomizer.shuffle(students)
+    var shuffled = newPairRandomizer.shuffle(students);
     var pairedArray = newPairRandomizer.makePairs(shuffled);
     var pair;
     for (pair in pairedArray) {

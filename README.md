@@ -3,6 +3,10 @@
 
 This is a simple app to generate randomized pairs for pair-programming. Built using Javascript backend and jQuery/HTML5 front end on a Sinatra server, tested in Jasmine.
 
+### Preview
+
+![yay pair programming](https://raw.github.com/deniseyu/jquery-pair-programming/master/public/screenshot.png)
+
 ### To Use
 
 Deployed at [https://pairing-randomizer.herokuapp.com](https://pairing-randomizer.herokuapp.com)
