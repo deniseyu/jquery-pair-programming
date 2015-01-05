@@ -1,0 +1,21 @@
+<header>
+  <h1>Log your pairing history here!</h1>
+  <h3>Coordinate with your partner so only one of you fills this out.</h3>
+  <article id='notice'></article>
+</header>
+
+<main class='main-body'>
+  <form>
+  <h2>1. What are your Github usernames?</h2>
+  <input type='text' id='student-one-field' class='field' placeholder='ex. deniseyu'>
+  <input type='text' id='student-two-field' class='field' placeholder='ex. yvettecook'>
+  <h2>2. What repo(s) did you work on?</h2>
+  <input type='text' id='repo-one-field' class='field' placeholder='ex. deniseyu/battleships'><br>
+  <input type='text' id='repo-two-field' class='field' placeholder='(optional)'><br>
+  <input type='text' id='repo-three-field' class='field' placeholder='(optional)'><br>
+  <input type='hidden' id='date' value='<%= Time.now %>'>
+  <input type='submit' value='Submit' id='submit-new-pair-button'>
+  </form>
+  <br><br>
+  <h3><a href='/'>back</a></h3>
+</main>

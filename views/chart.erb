@@ -1,0 +1,5 @@
+<% @user_count.each do |user| %>
+<%= user %><br>
+<% end %>
+<br><br>
+<%= @user_count.sort_by(&:last).reverse %>
