@@ -36,7 +36,9 @@ get '/chart' do
   db = conn.db('jquery-pair-programming')
   coll = db.collection('test')
   data = coll.find.to_a
-  users = json_to_pairs(data)
-  @user_count = collect_by_type(users)
+  @data = coll.find.to_a
+  @users = json_to_pairs(data)
+  @user_count = collect_by_type(@users)
+  @top_pairers = sort_by_pairing_frequency(@user_count)
   erb :chart
 end

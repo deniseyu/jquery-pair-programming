@@ -1,5 +1,8 @@
-<% @user_count.each do |user| %>
-<%= user %><br>
+<h1 id='top-pairers'>Top Pairers</h1>
+<table>
+<% @top_pairers.each do |pairer| %>
+<tr>
+<td><%= pairer[0] %></td><td><%= pairer[1] %></td>
+</tr>
 <% end %>
-<br><br>
-<%= @user_count.sort_by(&:last).reverse %>
+</table>

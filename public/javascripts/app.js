@@ -40,7 +40,16 @@ $(document).ready(function() {
     var repoOne = $('#repo-one-field').val();
     var repoTwo = $('#repo-two-field').val() || '';
     var repoThree = $('#repo-three-field').val() || '';
-    var reposAll = repoOne + ', ' + repoTwo + ', ' + repoThree;
+    var reposAll = '';
+    if(repoTwo === '' && repoThree === ''){
+      reposAll += repoOne;
+    } else if(repoTwo !== '' && repoThree === ''){
+      reposAll += repoOne + ', ' + repoTwo;
+    } else if(repoTwo === '' && repoThree !== ''){
+      reposAll += repoOne + ', ' + repoThree;
+    } else {
+      reposAll += repoOne + ', ' + repoTwo + ', ' + repoThree;
+    };
     var datePaired = $('#date').val();
     if(studentOne === '' || studentTwo === '' || repoOne === ''){
       alert('Please fill out both names and at least one repo!')

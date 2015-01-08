@@ -114,3 +114,23 @@ p.small {
   padding: 10px;
   font-color: red;
 }
+
+#top-pairers {
+  text-align: center;
+  padding: 10px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  font-size: 1.5em;
+}
+
+table td {
+  padding: 10px;
+}
+
+table tr:nth-child(odd) {
+  background-color: #83C3E5;
+}
